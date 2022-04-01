@@ -3,7 +3,9 @@ import { useHistory } from "react-router-dom";
 
 export default function Home() {
     const history = useHistory();
-
+    const routeToOrderForm = () => {
+        history.push("/pizza");
+    }
     return (
         <div className='home-wrapper'>
             <img
@@ -12,7 +14,7 @@ export default function Home() {
                 alt=''
             />
             <button
-                // onClick={routeToOrder}
+                onClick={routeToOrderForm}
                 id="order-pizza"
             >
                 Order now!

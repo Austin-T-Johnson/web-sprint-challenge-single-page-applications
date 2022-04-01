@@ -15,7 +15,7 @@ const App = () => {
       
       <div className='nav-links'>
         <Link to="/">Home</Link>
-        <Link>Order</Link>
+        <Link to="/pizza">Order</Link>
       </div>
 
     <Switch>

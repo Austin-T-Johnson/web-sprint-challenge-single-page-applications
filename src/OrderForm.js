@@ -1,24 +1,23 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
-export default function OrderForm(props) {
-
-
-
-return (
-
-<form id="pizza-form">
+export default function OrderForm() {
 
 
 
-
-
-    
-</form>
+    return (
+        <form id="pizza-form">
+           <button>test</button>
 
 
 
 
-)
+        </form>
+
+
+
+
+    )
 
 
 }
