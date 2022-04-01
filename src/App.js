@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Route, Link, Switch } from "react-router-dom";
 import Home from './Home';
-
+import OrderForm from './OrderForm';
 const App = () => {
 
 
@@ -19,6 +19,10 @@ const App = () => {
       </div>
 
     <Switch>
+      <Route path="/pizza">
+        <OrderForm />
+      </Route>
+
       <Route path="/">
         <Home />
       </Route>
