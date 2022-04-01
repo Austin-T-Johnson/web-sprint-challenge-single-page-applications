@@ -19,8 +19,8 @@ export default function Home() {
             >
                 Order now!
             </button>
-            
+
         </div>
-       
+
     )
 }
