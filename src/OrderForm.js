@@ -14,6 +14,9 @@ export default function OrderForm(props) {
     }
 
     return (
+
+        // name input //
+
         <form id="pizza-form">
             <input
                 id="name-input"
@@ -21,6 +24,8 @@ export default function OrderForm(props) {
                 placeholder="Enter your name"
                 onChange={onChange}
             />
+
+            {/* Size of pizza choice */}
 
             <label>Choice of size
                 <select id="size-dropdown">
@@ -31,6 +36,8 @@ export default function OrderForm(props) {
                     <option value="extra-large">Extra Large</option>
                 </select>
             </label>
+
+            {/* Choose toppings */}
 
             <h3>Add Toppings</h3>
             <p>Choose up to 5</p>
@@ -56,6 +63,15 @@ export default function OrderForm(props) {
                 />
             </label>
 
+            {/* Special Instructions Input */}
+
+            <h3>Special Instructions</h3>
+
+            <input 
+            id="special-text"
+            type="text"
+            placeholder="Any special instructions?"
+            />
 
 
         </form>
