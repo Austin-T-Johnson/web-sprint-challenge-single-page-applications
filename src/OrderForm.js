@@ -156,7 +156,7 @@ export default function OrderForm(props) {
 
             <StyledImg className='home-image' src={require('.//Assets/Pizza.jpg')} alt='' />
             <StyledH1>BloomTech Pizza Co.</StyledH1>
-            <StyledButton><StyledLink to="/">Home</StyledLink></StyledButton>
+            <StyledButton id="home-btn"><StyledLink to="/">Home</StyledLink></StyledButton>
             <Styledh2>🍕Build Your Own Pizza🍕</Styledh2>
             
 
