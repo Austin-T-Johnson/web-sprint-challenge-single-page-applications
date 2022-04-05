@@ -3,6 +3,7 @@ import axios from "axios";
 import { Route, Switch } from "react-router-dom";
 import Home from './Home';
 import OrderForm from './OrderForm';
+import Confirmation from './confirmation';
 
 
 const initialFormValues = {
@@ -57,6 +58,10 @@ const App = () => {
     <>
       <p className="error">{formError}</p>
       <Switch>
+        <Route path="/confirmation">
+          <Confirmation />
+        </Route>
+
         <Route path="/pizza">
           <OrderForm submit={submitForm} values={formValues} update={updateForm} setFormError={setFormError} />
         </Route>

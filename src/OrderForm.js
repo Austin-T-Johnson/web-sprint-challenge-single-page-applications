@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
+
 // Styled Components //
 
 const StyledH1 = styled.h1`
@@ -132,7 +133,7 @@ export default function OrderForm(props) {
         submit,
         update,
     } = props
-
+  
     const onSubmit = evt => {
         evt.preventDefault()
         submit()
@@ -302,7 +303,7 @@ export default function OrderForm(props) {
                 <br></br>
 
                 {/* Submit Button */}
-                <StyledButton2 id="order-button">Submit Order</StyledButton2>
+                <StyledButton2 id="order-button"><StyledLink to="/confirmation">Submit Order</StyledLink></StyledButton2>
 
             </form>
         </div>
