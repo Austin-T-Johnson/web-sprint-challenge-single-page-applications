@@ -12,3 +12,11 @@ code {
     monospace;
 }
 
+.error {
+  color: red;
+  font-size: 2rem;
+  position: absolute;
+  top: 90%;
+  left: 36%;
+  
+}

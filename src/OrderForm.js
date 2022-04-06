@@ -133,7 +133,7 @@ export default function OrderForm(props) {
         submit,
         update,
     } = props
-  
+
     const onSubmit = evt => {
         evt.preventDefault()
         submit()
